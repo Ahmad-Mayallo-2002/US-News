@@ -1,0 +1,21 @@
+.headingTitle {
+    border-top: 2px solid #ce0000;
+}
+.headingTitle .heading {
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.headingTitle .heading .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ce0000;
+    text-transform: uppercase;
+}
+.headingTitle .heading .icon {
+    color: #777;
+    gap: 2px;
+}
+.headingTitle .heading .icon svg:hover {
+    color: #ce0000;
+}

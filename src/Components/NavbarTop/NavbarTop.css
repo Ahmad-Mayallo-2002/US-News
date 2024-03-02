@@ -1,0 +1,91 @@
+.navbarTop {
+    background-color: #111;
+    height: 50px;
+}
+.navbarTop .navbarContainer {
+    padding: 12.5px 30px;
+    justify-content: space-between;
+}
+.navbarTop .navbarContainer .left {
+    justify-content: space-between;
+    gap: 15px;
+}
+.navbarTop .navbarContainer .left svg {
+    font-size: 16px;
+}
+.navbarTop .navbarContainer .item {
+    display: flex;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    transition: color 300ms;
+    &:hover {
+        color: #fff;
+    }
+}
+.navbarTop .navbarContainer .item span {
+    font-size: 13px;
+    font-weight: 500;
+}
+.navbarTop .navbarContainer .right {
+    position: relative;
+    gap: 15px;
+    justify-content: center;
+}
+.navbarTop .navbarContainer .right svg {
+    font-size: 18px;
+}
+.navbarTop .navbarContainer .icons {
+    display: flex;
+    gap: 15px;
+    color: #777;
+    cursor: pointer;
+}
+.navbarTop .navbarContainer .icons svg {
+    transition: color 300ms;
+    &:hover {
+        color: #fff;
+    }
+}
+.navbarTop .navbarContainer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    background-color: #fff;
+    top: calc(50px - 13px);
+    padding: 1rem 0;
+}
+.navbarTop .navbarContainer ul li a {
+    display: block;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: padding-left 300ms,color 300ms;
+    font-weight: 500;
+    color: #777;
+    &:hover {
+        color: #f00;
+    }
+}
+.navbarTop .navbarContainer ul li:nth-of-type(2) a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    .navbarTop {
+        height: fit-content;
+    }
+    .navbarTop .navbarContainer,
+    .navbarTop .navbarContainer .right {
+        flex-direction: column;
+        gap: 7.5px;
+    }
+    .navbarTop .navbarContainer .right ul {
+        top: calc(50px + 5px);
+    }
+}
+@media (max-width: 767px) {
+    .navbarTop .navbarContainer .left {
+        gap: 7.5px;
+        flex-direction: column;
+    }
+}

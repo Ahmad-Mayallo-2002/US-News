@@ -1,0 +1,69 @@
+.main-body {
+    padding: 30px;
+}
+.main-body .mainBodyWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.main-body .mainBodyWrapper [class^="style"] .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.main-body .mainBodyWrapper [class^="style"] figure {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        article {
+            color: #ec0000;
+        }
+    }
+}
+.main-body .mainBodyWrapper [class^="style"] figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.main-body .mainBodyWrapper [class^="style"] figure .row {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+}
+.main-body .mainBodyWrapper [class^="style"] figure .row span {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 300ms, color 300ms;
+    &:hover {
+        background-color: #ec0000;
+    }
+}
+.main-body .mainBodyWrapper [class^="style"] figure article {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    & > * {
+        transition: color 300ms;
+    }
+}
+.main-body .mainBodyWrapper [class^="style"] figure article p {
+    font-weight: bold;
+}
+.main-body .mainBodyWrapper [class^="style"] hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+    .main-body .mainBodyWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .main-body .mainBodyWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

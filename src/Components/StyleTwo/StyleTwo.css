@@ -1,0 +1,15 @@
+.styleTwo .box {
+    display: flex;
+    gap: 10px;
+}
+.styleTwo .box img {
+    width: 100%;
+}
+.styleTwo .box small {
+    color: #777;
+}
+.styleTwo .box p {
+    margin-top: 1rem;
+    font-weight: 800;
+    font-size: 12px;
+}

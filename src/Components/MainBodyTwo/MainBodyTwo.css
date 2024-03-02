@@ -1,0 +1,144 @@
+.mainBodyTwo {
+    padding: 30px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item {
+    .content > article {
+        background-size: 100% 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        &:hover {
+            .text {
+                color: #ec0000;
+            }
+        }
+    }
+    &:first-of-type .content {
+        &:first-of-type > article {
+            background-image: url(../../assets/elonMusk2.jpg);
+        }
+        &:nth-of-type(2) > article {
+            background-image: url(../../assets/health.jpg);
+        }
+    }
+    &:nth-of-type(2) .content {
+        &:first-of-type > article {
+            background-image: url(../../assets/ronaldo2.jpg);
+        }
+        &:nth-of-type(2) > article {
+            background-image: url(../../assets/lifestyle-01.jpg);
+        }
+    }
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item img {
+    max-width: 100%;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item hr {
+    margin: 1rem 0;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .row {
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .row span {
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #111;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .row svg {
+    background-color: #ec0000;
+    width: 44px;
+    height: 44px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .text {
+    padding: 1rem;
+    color: #fff;
+    transition: color 300ms;
+    small {
+        font-weight: bold;
+    }
+    p {
+        font-weight: 800;
+    }
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .box {
+    display: flex;
+    align-items: center;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .box img {
+    width: 175px;
+    margin-right: 15px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .box small {
+    color: #777;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .item .box p {
+    font-weight: 800;
+    font-size: 13px;
+    color: #000;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .sports img {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .sports {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .sports small {
+    color: #777;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .sports p {
+    font-weight: 800;
+    font-size: 13px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .news-col {
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 10rem;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .news-col ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .news-col ul li {
+    padding: 10px;
+    background-color: #ec0000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .advert {
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 1rem;
+    img {
+        width: 100%;
+    }
+}
+.mainBodyTwo .mainBodyTwoWrapper > .grid .first-content {
+    margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+    .mainBodyTwo .mainBodyTwoWrapper > .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .mainBodyTwo .mainBodyTwoWrapper > .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

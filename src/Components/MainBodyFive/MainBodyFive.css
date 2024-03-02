@@ -1,0 +1,131 @@
+.mainBodyFive {
+    padding: 30px;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    &:first-of-type {
+        margin-bottom: 60px;
+    }
+}
+.mainBodyFive .mainBodyFiveWrapper .col > .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    min-height: 300px;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery article {
+    padding: 1rem;
+    color: #fff;
+    background-image: url(../../assets/photo-gallery-01.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery article .row span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #111;
+    padding: 10px;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery article .row svg {
+    width: 44px;
+    height: 44px;
+    padding: 5px;
+    background-color: #ec0000;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery article small,
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery article p {
+    font-weight: 800;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .gallery .grid span {
+    display: block;
+    height: 200px;
+    background-size: cover;
+    &:first-of-type {
+        background-image: url(../../assets/photo-gallery-02.jpg);
+    }
+    &:nth-of-type(2) {
+        background-image: url(../../assets/photo-gallery-03.jpg);
+    }
+    &:last-of-type {
+        background-image: url(../../assets/photo-gallery-04.jpg);
+    }
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .opinion .users {
+    background-color: #eee;
+    padding: 20px;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .opinion .users .box {
+    column-gap: 1rem;
+    &:nth-of-type(2) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .opinion .users .box img {
+    border: 1px solid;
+    border-radius: 50%;
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .opinion .users .box q {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: .5px;
+    quotes: "\201C" "\201D";
+}
+.mainBodyFive .mainBodyFiveWrapper .grid .opinion .users .box small {
+    color: #777;
+}
+@media (min-width: 992px) {
+    .mainBodyFive .mainBodyFiveWrapper .col .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.mainBodyFive .mainBodyFiveWrapper .food-recioes .row article {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    color: #fff;
+    &:first-of-type {
+        background-image: url(../../assets/food-and-resturant-01.jpg);
+    }
+    &:nth-of-type(2) {
+        background-image: url(../../assets/food-and-resturant-02.jpg);
+    }
+    &:last-of-type {
+        background-image: url(../../assets/food-and-resturant-03.jpg);
+    }
+}
+.mainBodyFive .mainBodyFiveWrapper .food-recioes .row article > * {
+    font-weight: 800;
+}
+.mainBodyFive .mainBodyFiveWrapper .advert {
+    background-color: #eee;
+    gap: 15px;
+    img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainBodyFive .mainBodyFiveWrapper .grid .col {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 767px) {
+    .mainBodyFive .mainBodyFiveWrapper .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,50 @@
+.widgets .main-image {
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    margin-bottom: 2rem;
+}
+.widgets .main-image img {
+    width: 100%;
+}
+.widgets .socials {
+    padding: 20px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.widgets .socials .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    &:hover {
+        div {
+            background-color: #fff;
+        }
+        svg {
+            color: #ec0000;
+        }
+    }
+}
+.widgets .socials .box > div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ec0000;
+    background-color: #ec0000;
+    margin-bottom: 10px;
+    transition: background-color 300ms;
+}
+.widgets .socials .box > div svg {
+    font-size: 30px;
+    color: #fff;
+    transition: color 300ms;
+}
+.widgets .socials .box span:first-of-type {
+    font-weight: 800;
+}

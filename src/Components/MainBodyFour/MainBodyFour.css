@@ -1,0 +1,140 @@
+.mainBodyFour {
+    padding: 30px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item {
+    .mainContent {
+        height: 200px;
+        background-size: cover;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &:first-of-type .mainContent {
+        background-image: url(../../assets/politics-01.jpg);
+    }
+    &:nth-of-type(2) .mainContent {
+        background-image: url(../../assets/lifestyle-01.jpg);
+    }
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .mainContent .row span {
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .mainContent .row svg {
+    width: 44px;
+    height: 44px;
+    background-color: #ec0000;
+    padding: 5px;
+    color: #fff;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .mainContent .text {
+    color: #fff;
+    small,p {
+        font-weight: 800;
+    }
+}
+.mainBodyFour .mainBodyFourWrapper .grid hr {
+    margin: 1rem 0;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .box .text small {
+    color: #777;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .box .text p {
+    font-weight: 800;
+    font-size: 12px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .cols {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .cols img {
+    width: 100%;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .cols small {
+    color: #777;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .cols p {
+    font-weight: 800;
+    font-size: 12px;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-now {
+    padding: 20px;
+    background-color: #eee;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item h4 {
+    font-weight: 800;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-row {
+    margin-bottom: 1rem;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-row progress {
+    width: 200px;
+    height: 15px;
+    margin-right: 5px;
+    appearance: none;
+    border: 1px solid #aaa;
+    &::-webkit-progress-bar {
+        background-color: transparent;
+    }
+    &::-webkit-progress-value {
+        background-color: #ec0000;
+    }
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-row label {
+    color: #777;
+    width: 120px;
+    cursor: pointer;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-row label input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .radio {
+    padding: 20px;
+    background-color: #eee;
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .vote-button {
+    cursor: pointer;
+    background-color: #ec0000;
+    padding: 7.5px 12.5px;
+    color: #fff;
+    border: none;
+    transition: background-color 300ms;
+    font-weight: 800;
+    &:hover {
+        background-color: #222;
+    }
+}
+.mainBodyFour .mainBodyFourWrapper .grid .item .checkbox {
+    margin-bottom: 5rem;
+}
+@media (max-width: 991px) {
+    .mainBodyFour .mainBodyFourWrapper .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .mainBodyFour .mainBodyFourWrapper .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mainBodyFour .mainBodyFourWrapper .grid .item .vote-row {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+}
